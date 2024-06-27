@@ -7,11 +7,29 @@ import plotly.express as px
 app = dash.Dash(__name__)
 
 # app layout
+# app.layout = html.Div([
+#     html.H1('INTERACTIVE SLIDER'),
+#     dcc.Slider(1, 10, 1, value=5, id='slider'),
+#     html.Div(id='slider-output', style={'fontSize': 60})
+# ])
+
 app.layout = html.Div([
     html.H1('INTERACTIVE SLIDER'),
     dcc.Slider(1, 10, 1, value=5, id='slider'),
-    html.Div(id='slider-output', style={'fontSize': 60})
-])
+    html.Div(id='slider-output', style={'fontSize': 60} )])
+    
+ 
+
+
+
+
+
+# #Now let's set the layout colors of our app
+# fig.update_layout(
+#     plot_bgcolor ='#121212',    # The bg of the plot
+#     paper_bgcolor = '#121212',  # The bg of the paper 
+#     font_color = '#1876AE'      # The text on the plot (Inside the plot only)
+# )
 
 # callback
 @app.callback(
